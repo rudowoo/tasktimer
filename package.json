@@ -1,5 +1,5 @@
 {
-  "name": "task-timer-pro",
+  "name": "habit-hours",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,11 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "echo 'Linting skipped - no ESLint config'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:cf": "npx wrangler pages deploy dist",
+    "deploy:cf:create": "npx wrangler pages project create task-timer-pro"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.3",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -23,6 +29,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^7.1.9",
+    "wrangler": "^4.42.0"
   }
 }
