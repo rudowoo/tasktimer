@@ -1,0 +1,5 @@
+{
+  "name": "Task Timer Pro",
+  "description": "A to-do list application where each task has its own individual stopwatch timer to track time spent.",
+  "requestFramePermissions": []
+}
