@@ -35,10 +35,11 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: npm run build
 
-      - name: Copy files for GitHub Pages
+      - name: Fix MIME types and copy files for GitHub Pages
         run: |
           cp 404.html dist/404.html
           cp .nojekyll dist/.nojekyll
+          node scripts/fix-mime-types.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

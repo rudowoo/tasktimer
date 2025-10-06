@@ -17,9 +17,14 @@ export default defineConfig({
       output: {
         manualChunks: undefined,
         assetFileNames: 'assets/[name]-[hash][extname]',
-        chunkFileNames: 'assets/[name]-[hash].mjs',
-        entryFileNames: 'assets/[name]-[hash].mjs'
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
       }
+    }
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript'
     }
   }
 })
