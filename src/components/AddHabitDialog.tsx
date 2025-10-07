@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from './Button';
 
 interface AddHabitDialogProps {
   onAdd: (name: string, description?: string, color?: string) => void;

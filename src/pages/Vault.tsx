@@ -1,6 +1,6 @@
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Button } from '../components/ui/button';
+import { Button } from '../components/Button';
 import { useHabits } from '../hooks/useHabits';
 import { formatDuration } from '../lib/utils';
 

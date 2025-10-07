@@ -1,9 +1,0 @@
-name = "task-timer-pro"
-compatibility_date = "2024-10-06"
-
-[env.production]
-name = "task-timer-pro"
-
-[[pages_builds]]
-build = { command = "npm run build", cwd = ".", watch_dir = "src" }
-destination = "dist"

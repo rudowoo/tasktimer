@@ -5,12 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/post-build.cjs",
-    "build:ci": "vite build",
-    "lint": "echo 'Linting skipped - no ESLint config'",
+    "build": "vite build",
     "preview": "vite preview",
-    "deploy:cf": "npx wrangler pages deploy dist",
-    "deploy:cf:create": "npx wrangler pages project create task-timer-pro"
+    "deploy": "npm run build && npx wrangler pages deploy dist"
   },
   "dependencies": {
     "clsx": "^2.1.1",

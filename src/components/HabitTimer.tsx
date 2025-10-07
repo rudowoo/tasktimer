@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Pause, Square, Trash2, Clock } from 'lucide-react';
 import { Habit, Session } from '../types/habit';
-import { Button } from './ui/button';
+import { Button } from './Button';
 import { formatDuration } from '../lib/utils';
 
 interface HabitTimerProps {
