@@ -4,11 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Set base for GitHub Pages when building in CI
-  // If GITHUB_REPOSITORY is set (e.g., user/repo), use /repo/ as base; otherwise '/'
-  base: process.env.GITHUB_REPOSITORY
-    ? `/${process.env.GITHUB_REPOSITORY.split('/').pop()}/`
-    : '/',
+  // Set base for GitHub Pages - use /tasktimer/ for your repository
+  base: '/tasktimer/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -20,11 +17,6 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js'
       }
-    }
-  },
-  server: {
-    headers: {
-      'Content-Type': 'application/javascript'
     }
   }
 })
